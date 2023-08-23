@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+
+        div.main{
+            position: relative;
+            border: 2px solid black;
+            
+            height: 200px;
+            width: 200px;
+        }
+
+        div.bottom2{
+
+            border: 1 px solid green;
+            position: absolute;
+            right:0px;
+            bottom:0px;
+        }
+        div.bottom-left{
+            border: 1 px solid green;
+            position: absolute;
+            left:0px;
+            bottom: 0px;
+             
+        }
+        
+        div.top-right{
+            border: 1 px solid green;
+            position: absolute;
+            right:0px;
+            top: 0px;
+             
+        }
+        div.centered{
+            border: 1 px solid green;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width:100%;
+        }
+        .right{
+            border: 1 px solid green;
+            position: absolute;
+            text-align: center;
+            top: 41%;
+            right:0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>in this div we are using position relative and absolute property and  using top, bottum, left, and right</h1>
+<div class="main">
+    maindiv
+
+    <div class="bottom2"> bottom right</div>
+    <div class="bottom-left">Bottom left</div>
+    <div class="top-right">Top right</div>
+    <div class="centered">Centered</div>
+    <p class="right">right</p>
+</div>
+</html>

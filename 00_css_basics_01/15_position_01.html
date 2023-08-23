@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
     <style>
-        div{
+
+        .pos{
             width:150px;
             height:150px;
             background-color: lightcoral;
@@ -15,10 +16,26 @@
         }
 
         #pos3{
+        position:relative;
             top:100px;
             left:50px;
+            
         }
 
+        #pos1{
+            position: fixed;
+        }
+        
+        .wrapper{
+            height:1000px;
+            width:600px;
+            background-color: blueviolet;
+        }
+
+        #pos4{
+            position:sticky;
+            top: 0px;
+        }
     </style>
 </head>
 <body>
@@ -26,11 +43,12 @@
   <h1>This is First Heading</h1>
   <p>This is second paragraph</p>
   <h2>This is Second heading</h2> -->
-
-
+<h1>This div is showing , positions Relative, fixed, and sticky</h1>
+<div class="wrapper">
    <div class="pos" id="pos1">DIV 1</div>
    <div class="pos" id="pos2">Div 2</div>
    <div class="pos" id="pos3">DIV 3</div>
    <div class="pos" id="pos4">DIV 4</div>
+</div>
 </body>
 </html>
