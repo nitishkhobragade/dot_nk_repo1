@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 2px #000;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-1{
+    background-image: url(spacebg.jpg);
+    width: 100%;
+    height: 100vh;
+}
+.bg-2{
+    background-image: url(piratebeach.jpg);
+    width: 100%;
+    height: 600px;
+}
+.bg-3{
+    background-image: url(piratenight.jpg);
+    width: 100%;
+    height: 100vh;
+}
+.bg-4{
+    background-image: url(waterfall.jpg);
+    width: 100%;
+    height: 600px;
+}
