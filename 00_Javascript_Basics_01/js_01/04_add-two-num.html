@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add numbers one by one</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+
+    .container{
+      border:2px solid red;
+      height: 300px;
+      margin: 30px;
+    
+
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+    }
+  </style>
+    <script>
+let numOne, numTwo, sum;
+function getFirNum()
+{
+  numOne = parseInt(document.getElementById("first").value);
+  if(numOne)
+  {
+    temp = document.getElementById("paraOne");
+    temp.style.display = "none";
+    temp = document.getElementById("paraTwo");
+    temp.style.display = "block";
+  }
+}
+function getSecNum()
+{
+  numTwo = parseInt(document.getElementById("second").value);
+  if(numOne && numTwo)
+  {
+    temp = document.getElementById("paraOne");
+    temp.style.display = "none";
+    temp = document.getElementById("paraTwo");
+    temp.style.display = "none";
+    sum = numOne + numTwo;
+    temp = document.getElementById("paraThree");
+    temp.style.display = "block";
+    document.getElementById("res").innerHTML = sum;
+  }
+}
+        
+    </script>
+</head>
+<body>
+  <h3>This program is to add two numbers</h3> <br>
+  <div class = "container">
+    
+    <p id="paraOne">Enter First Number: <input id="first">
+      <button onclick="getFirNum()">Enter</button></p>
+      <p id="paraTwo" style="display:none;">Enter Second Number: <input id="second">
+      <button onclick="getSecNum()">Add</button></p>
+      <p id="paraThree" style="display:none;">Sum = <span id="res"></span></p>
+  </div>
+        
+</body>
+</html>
