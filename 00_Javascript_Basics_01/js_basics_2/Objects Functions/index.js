@@ -47,3 +47,7 @@ function createRectangle(len, bre) {
 // to create object
 
 let rectangleObj1 = createRectangle(5, 6);
+let rectangle2 = createRectangle(2, 3);
+let rectangle3 = createRectangle(7, 9);
+
+
